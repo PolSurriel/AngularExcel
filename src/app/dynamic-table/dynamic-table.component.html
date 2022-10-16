@@ -1,0 +1,12 @@
+<div fxLayout="column" style="padding: 1rem 0">
+    <div fxLayout="row" id="menu">
+        <button mat-raised-button color="primary" (click)="fileInput.click()">Load CSV</button>
+        <button mat-raised-button color="primary" (click)="onSaveAsCSV()">Save as CSV</button>
+        <app-toggle [text]="'Fill full width'" (toggleit)="onToggleFillFullWidth($event)"></app-toggle>
+        <input #fileInput type="file" accept=".csv" hidden (change)="onFileSelected($event)" />
+    </div>
+    <div fxLayout="column" style="margin-top: 1rem;">
+        <app-table-editor [fillAllWidth]="fullFillWidth" ></app-table-editor>
+        <app-user-guide></app-user-guide>
+    </div>
+</div>

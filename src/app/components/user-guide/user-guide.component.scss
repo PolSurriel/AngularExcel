@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    margin-top:50px;
+}
+
+.key-indicator{
+    background-color: rgb(224, 224, 224);
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 2px 2px 1px black;
+    margin-right: 2px;
+    font-size: smaller;
+}
+
+li{
+    margin-bottom: 6px;;
+}
+
+h2{
+    margin-top: 40px;
+}
